@@ -9,10 +9,6 @@ let orm = {
             cb(results);
         });
     },
-
-
-
-
     insertOne: () => {
         console.log("Burger Added");
     },
