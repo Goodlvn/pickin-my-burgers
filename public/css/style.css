@@ -17,6 +17,11 @@ body {
  .banner-color{
      background-color: #FCD614 !important;
  }
+
+ .menuBtn-color{
+    background-color: #FE4308 !important;
+    color: white !important;
+}
  
  .main-font{
      color: black;
