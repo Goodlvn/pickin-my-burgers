@@ -1,0 +1,36 @@
+body {
+    background-color: #A05911;
+    color: white;
+ }
+ 
+ .burgers-container {
+     height: 333px;
+     background-color: #FC9114;
+     border: 3px solid #FE4308;
+     overflow: scroll;
+ }
+ 
+ .new-burger {
+     margin: 0 auto !important;
+ }
+ 
+ .banner-color{
+     background-color: #FCD614 !important;
+ }
+ 
+ .main-font{
+     color: black;
+     font-family: 'Grenze Gotisch', sans-serif;
+ }
+ 
+ .burger-name {
+     font-size: 18px;
+     color: black;
+ }
+ 
+ .burger-item {
+     border-top: 2px solid #FE4308;
+     border-bottom: 2px solid #FE4308;
+ }
+ 
+ 
