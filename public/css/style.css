@@ -1,12 +1,14 @@
 body {
     background-color: #A05911;
-    color: white;
+    color: #FCD614;
  }
  
  .burgers-container {
      height: 333px;
      background-color: #FC9114;
-     border: 3px solid #FE4308;
+     border: 3px solid #FCD614;
+     border-top: 2px solid #FCD614;
+     border-bottom: 2px solid #FCD614;
      overflow: scroll;
  }
  
@@ -30,12 +32,13 @@ body {
  
  .burger-name {
      font-size: 18px;
-     color: black;
+     color: white;
  }
  
  .burger-item {
-     border-top: 2px solid #FE4308;
-     border-bottom: 2px solid #FE4308;
+     border-top: 2px solid #FCD614 ;
+     border-bottom: 2px solid #FCD614;
+     background-color: #5CBF4B;
  }
  
  
