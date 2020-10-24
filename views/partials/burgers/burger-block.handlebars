@@ -1,17 +1,11 @@
 
 
-
-
-
-
-
-
 <div class="row burger-item banner-color m-0 p-3 w-100">
     <div class="col-8">
         <p class="m-0 d-inline-block burger-name align-left">{{burger_name}}</p>
     </div>
     <div class="col-4">
-        <button type="submit" class="btn btn-sm btn-warning ml-2 main-font align-right">Eat This
-            Burger</button>
+        <button type="submit" class="eat-brgr btn btn-sm btn-warning ml-2 main-font align-right" data-id="{{this.id}}" data-ateburger="{{hungry}}">
+            {{#if hungry}}Eat This Burger!{{else}}That Was Great!{{/if}}</button>
     </div>
 </div>

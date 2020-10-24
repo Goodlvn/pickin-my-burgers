@@ -1,36 +1,40 @@
 <div class="jumbotron jumbotron-fluid banner-color main-font">
-        <div class="container">
-            <h1 class="display-4 text-center">Pick-Your-Burgers</h1>
-        </div>
-    </div>
-
     <div class="container">
-        <div class="row">
-            <div class="col-sm text-center">
-                <h3>BURGERS TO EAT</h3>
-                <div class="burgers-container">
+        <h1 class="display-4 text-center">Pick-Your-Burgers</h1>
+    </div>
+</div>
 
-                    {{#each burgers}}
-                        {{>burgers/burger-block}}
-                    {{/each}}
+<div class="container">
+    <div class="row">
+        <div class="col-sm text-center">
+            <h3>BURGERS TO EAT</h3>
+            <div class="burgers-container">
 
-                </div>
-            </div>
-            <div class="col-sm text-center">
-                <h3>EATEN BURGERS</h3>
-                <div class="burgers-container">
-                    {{!-- this is where the iteration and partial comes in --}}
-                </div>
+                {{#each burgers}}
+                    {{#unless devoured}}
+                        {{>burgers/burger-block hungry=true}}
+                    {{/unless}}
+                {{/each}}
+
             </div>
         </div>
-
-        <form class="text-center mt-4">
-            <p1>SLAP ANOTHER BURGER ON THE GRILL</p1>
-            <div class="form-group d-flex justify-content-center">
-                <input type="text" class="form-control w-25" id="brgr">
-                <button type="submit" class="make-burger btn btn-warning ml-2 main-font">Aye Aye Captain</button>
+        <div class="col-sm text-center">
+            <h3>EATEN BURGERS</h3>
+            <div class="burgers-container">
+                {{#each burgers}}
+                    {{#if devoured}}
+                        {{>burgers/burger-block hungry=false}}
+                    {{/if}}
+                {{/each}}
             </div>
-        </form>
+        </div>
     </div>
 
-    
+    <form class="text-center mt-4">
+        <p1>SLAP ANOTHER BURGER ON THE GRILL</p1>
+        <div class="form-group d-flex justify-content-center">
+            <input type="text" class="form-control w-25" id="brgr">
+            <button type="submit" class="make-burger btn btn-warning ml-2 main-font">Aye Aye Captain</button>
+        </div>
+    </form>
+</div>

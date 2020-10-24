@@ -1,4 +1,5 @@
 var orm = require("../config/orm.js");
+const connection = require("../config/connection.js");
 
 const burger = {
 
@@ -11,6 +12,11 @@ const burger = {
         orm.insertOne("burgers", columns, values, (res) => {
             cb(res)
         });
+    },
+    update: (objColValues, condition, cb) => {
+        orm.updateOne("burgers", objColValues, condition, (data) => {
+            cb(data)
+        })
     }
 
 
