@@ -84,6 +84,18 @@ let orm = {
             cb(data);
         });
     },
+    deleteOne: (tableName, condition, cb) => {
+        let queryString = "DELETE FROM " + tableName;
+        queryString += " WHERE ";
+        queryString += condition;
+    
+        connection.query(queryString, (err, data) => {
+          if (err) {
+            throw err;
+          }
+          cb(data);
+        });
+      }
 };
 
 module.exports = orm;
